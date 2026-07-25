@@ -143,6 +143,18 @@ The HTML parsing logic is tested using Jest and includes:
 
 ---
 
+## AI Usage
+
+AI tools were used to assist with different parts of this project:
+
+- **Qwen** was used as a coding assistant while working with **Cheerio** for the first time. It also helped with parts of the error handling and creating the initial parsing tests.
+- **ChatGPT** was used to help write and improve the project documentation, review code, explain concepts, and prepare the project walkthrough.
+- **Kombai** was used to help design and generate parts of the frontend UI, which I then customized and integrated into the project.
+
+All generated code and suggestions were reviewed, tested, and modified where necessary. The final implementation, debugging, deployment, and technical decisions were completed and verified by me.
+
+---
+
 ## Notes
 
 This project was built as part of the **Digital Heroes Software Development Training Task**.

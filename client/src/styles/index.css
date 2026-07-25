@@ -1,17 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
 :root {
-  --font-family: 'Inter', sans-serif;
-  --text-color: #040404;
-  --bg-color: #f9f9f9;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --color-bg: #eef3f7;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e8eff5;
+  --color-text: #243b53;
+  --color-muted: #52677d;
+  --color-muted-soft: #6f8498;
+  --color-primary: #102a43;
+  --color-primary-hover: #193f5e;
+  --color-accent: #1560bd;
+  --color-line: #bcccdc;
+  --color-line-strong: #91a3b0;
+  --color-positive: #0f5132;
+  --color-warning: #855c00;
+  --color-negative: #842029;
+  --color-negative-soft: #fff1f1;
+
+  --content-max: 1080px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-panel: 0 14px 34px rgba(36, 59, 83, 0.08);
+  --focus-ring: 0 0 0 4px rgba(21, 96, 189, 0.16);
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  min-width: 320px;
+  background: var(--color-bg);
+}
+
 body {
-  font-family: var(--font-family);
-  background: var(--bg-color);
-  color: var(--text-color);
+  min-width: 320px;
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(21, 96, 189, 0.18);
+  color: var(--color-primary);
 }

@@ -15,11 +15,13 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [report, setReport] = useState(null);
   const [error, setError] = useState(null);
-
+ 
   async function handleSubmit(event) {
     event.preventDefault();
 
     setLoading(true);
+    setError(null);
+    setReport(null);
 
     try {
       const response = await axios.post(
@@ -52,18 +54,21 @@ export default function App() {
 
   return (
     <div className="app">
-      <Hero />
+      <main className="app-main">
+        <div className="app-frame">
+          <Hero />
 
-      <AuditForm
-        url={url}
-        setUrl={setUrl}
-        loading={loading}
-        onSubmit={handleSubmit}
-      />
+          <AuditForm
+            url={url}
+            setUrl={setUrl}
+            loading={loading}
+            onSubmit={handleSubmit}
+          />
 
-      <ErrorMessage error={error} />
-
-      <Report report={report} />
+          <ErrorMessage error={error} />
+          <Report report={report} />
+        </div>
+      </main>
 
       <Footer />
     </div>
